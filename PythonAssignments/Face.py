@@ -1,0 +1,7 @@
+print("    ,,,,,,,.,,,   ")
+print("   +           +  ")
+print("  [|  o     o  |] ")
+print("   |     ^     |  ")
+print("   |  ,  _  ,  |  ")
+print("   |           |  ")
+print("   +_ _ _ _ _ _+  ")
