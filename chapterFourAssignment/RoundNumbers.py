@@ -1,0 +1,6 @@
+number = float(input("Enter your number: "))
+print(round(number, 1))
+print(round(number, 2))
+print(round(number, 3))
+print(round(number, 4))
+print(round(number, 5))
