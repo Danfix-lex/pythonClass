@@ -1,14 +1,10 @@
-import unittest
+from unittest import TestCase
 from datetime import datetime
+import electronicCheckoutSystem
 
-class TestElectronicCheckoutSystem(unittest.TestCase):
+class TestElectronicCheckoutSystem(TestCase):
     def test_generate_invoice(self):
-        customer_name = "John Doe"
-        product_names = ["Milk", "Bread"]
-        quantities = [2, 3]
-        prices = [10.0, 5.0]
-        discount_percent = 10
-        cashier_name = "Alice"
+        actual_invoice = electronicCheckoutSystem.generate_invoice ("John Doe", ["Milk", "Bread"], [2, 3], [10.0, 5.0], 10, "Alice")
 
         current_date = datetime.now().strftime("%d-%b-%Y %I:%M:%S %p")
         expected_invoice = (
@@ -33,10 +29,5 @@ class TestElectronicCheckoutSystem(unittest.TestCase):
             "===============================================\n"
             "THIS IS NOT A RECEIPT. KINDLY PAY 33.88"
         )
-
-        actual_invoice = generate_invoice(customer_name, product_names, quantities, prices, discount_percent, cashier_name)
         self.assertEqual(actual_invoice, expected_invoice)
-
-if __name__ == "__main__":
-    unittest.main()
 
