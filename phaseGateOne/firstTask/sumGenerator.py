@@ -1,5 +1,3 @@
-import random
-
 print("Welcome, Kindly answer the questions below to test the level of your intelligence: ")
 
 questions = [

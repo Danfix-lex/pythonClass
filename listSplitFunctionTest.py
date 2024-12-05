@@ -24,3 +24,41 @@ class TestListSplitFunction(TestCase):
         self.assertEqual(actual, expected)
     def test_that_the_input_is_not_invalid(self):
         self.assertRaises(TypeError, listSplitFunction.get_split_list, ["daniel"])
+        
+        
+        
+from unittest import TestCase
+import Army
+
+
+class TestSearchElement(TestCase):
+    def test_if_function_is_correct(self):
+        actual = 
+    def test_element_found(self):
+        self.assertEqual(search_element([3, 4, 5, 6, 7, 8], 6), 3)
+
+    def test_element_not_found(self):
+        self.assertEqual(search_element([3, 4, 5, 6, 7, 8], 10), -1)
+
+    def test_empty_list(self):
+        self.assertEqual(search_element([], 5), -1)
+
+    def test_single_element_match(self):
+        self.assertEqual(search_element([5], 5), 0)
+
+    def test_single_element_no_match(self):
+        self.assertEqual(search_element([5], 10), -1)
+
+    def test_first_element(self):
+        self.assertEqual(search_element([1, 2, 3], 1), 0)
+
+    def test_last_element(self):
+        self.assertEqual(search_element([1, 2, 3, 4], 4), 3)
+
+    def test_duplicate_elements(self):
+        self.assertEqual(search_element([2, 3, 4, 3, 5], 3), 1)
+
+
+if __name__ == "__main__":
+    unittest.main()
+

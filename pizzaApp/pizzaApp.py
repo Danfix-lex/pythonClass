@@ -1,6 +1,6 @@
 import math
 
-def calculate_order(guests, pizza_type):
+def get_pizza_details_and_calculate_order(guests, pizza_type):
     pizza_data = {
         "Sapa": {"slices": 4, "price": 2500},
         "Small Money": {"slices": 6, "price": 2900},
