@@ -1,0 +1,2 @@
+names = ( [], [], )
+print(all(names))
