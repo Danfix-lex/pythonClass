@@ -29,3 +29,6 @@ class TestListFunction(unittest.TestCase):
         set_func.add("Fame")
         set_func.clear()
         assert len(set_func) == 0
+
+if __name__ == '__main__':
+    unittest.main()
