@@ -1,4 +1,4 @@
-from diary import Diary
+from diaryApp import Diary
 
 class Diaries:
     def __init__(self):
