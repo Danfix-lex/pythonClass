@@ -1,3 +1,6 @@
+import string
+from operator import is_not
+
 name = "ayo"
 print(name)
 print(id(name))
@@ -7,9 +10,26 @@ print(id(name))
 name = "tunde"
 print(name)
 print(id(name))
-my_name = "ayo"
-print(my_name)
+my_name = "tunde"
+print(my_name.capitalize())
+help(my_name.capitalize())
+print(my_name[::-1])
 print(id(my_name))
+my_own_name = "danfix"
+print(my_own_name.swapcase())
+letters = "A"
+word = "A"
+print(is_not(letters, word))
+titles = ["dan", "tunde", "malik", "jayjay"]
+print(", ".join(titles))
+print(", ".join(string.ascii_letters))
+print(string.ascii_letters.split(", "))
+print(string.ascii_letters.join(", "))
+username = input("Enter your name")
+if username.isspace():
+    username = input("Enter your name")
+    if username.isdigit():
+        username = input("Enter your name")
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
