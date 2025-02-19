@@ -5,29 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae3c1137-b597-4861-b1e9-0937ce531955" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/classMethod.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diary/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/.idea/diary.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/diaryApp/Diaries.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/diaryApp/Diary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/diaryApp/DiaryTest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/diaryApp/Entry.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/diaryApp/MainApplication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryApp/diaryApp/diaryTest/DiaryTest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tvFunction/TvFunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tvTest/TvTest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../classWork/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../classWork/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/arrays/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/arraystest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/linkedlists/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/linkedliststest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/queues/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/queuestest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/sets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/setstest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/stacks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/stackstest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/tuples/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA/tuplestest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApp/ClassWork.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../enum/enums/GeoPlitical.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/DSA/Stack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/DSA/list_function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/DSA/set_function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/DSATest/TestStack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/DSATest/list_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/DSATest/set_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApp/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bankApp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApp/bankfunction/BankFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankApp/bankfunction/BankFunction.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/danfix/pythonClass/diaryApp",
+    "last_opened_file_path": "/home/danfix/pythonClass/classMethod",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -265,6 +265,7 @@
       <workItem from="1739481805072" duration="1708000" />
       <workItem from="1739771313934" duration="36000" />
       <workItem from="1739880005422" duration="336000" />
+      <workItem from="1739921686291" duration="38000" />
     </task>
     <servers />
   </component>
