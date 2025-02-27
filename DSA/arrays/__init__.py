@@ -34,21 +34,3 @@ class Array:
 
     def is_empty(self):
         return self.length == 0
-
-    def print_array(self):
-        print(f"Array: {self.array[:self.length]}")
-
-
-arr = Array()
-arr.insert(10)
-arr.insert(20)
-arr.insert(30)
-arr.print_array()
-
-print(arr.get(1))
-print(arr.remove_at(1))
-arr.print_array()
-
-print(arr.index_of(30))
-print(arr.size())
-print(arr.is_empty())

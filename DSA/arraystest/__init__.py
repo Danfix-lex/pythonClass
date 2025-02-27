@@ -47,11 +47,5 @@ class TestArray(unittest.TestCase):
         self.arr.insert(10)
         self.assertFalse(self.arr.is_empty())
 
-    def test_print_array(self):
-        self.arr.insert(10)
-        self.arr.insert(20)
-        self.arr.insert(30)
-        self.arr.print_array()  # This will print to the console, so manually verify output
-
 if __name__ == "__main__":
     unittest.main()

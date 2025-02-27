@@ -54,10 +54,3 @@ class LinkedList:
 
     def is_empty(self):
         return self.head is None
-
-    def display(self):
-        current = self.head
-        while current is not None:
-            print(current.data, end=" -> ")
-            current = current.next
-        print("None")

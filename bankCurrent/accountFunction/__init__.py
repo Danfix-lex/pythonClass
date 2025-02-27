@@ -1,7 +1,7 @@
 class AccountFunction:
     def __init__(self, pin, name):
         self.balance = 0
-        self.account_exists = True  # Renamed to avoid method conflict
+        self.account_exists = True
         self.pin = pin
         self.name = name
 
@@ -36,7 +36,7 @@ class AccountFunction:
         return self.balance
 
     def close_account(self):
-        self.account_exists = False  # Properly deactivating the account
+        self.account_exists = False
 
     def update_pin(self, old_pin, new_pin):
         if old_pin != self.pin:

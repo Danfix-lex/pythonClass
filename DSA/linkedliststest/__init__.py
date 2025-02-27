@@ -61,17 +61,5 @@ class TestLinkedList(unittest.TestCase):
         self.ll.append(10)
         self.assertFalse(self.ll.is_empty())
 
-    def test_display(self):
-        self.ll.append(10)
-        self.ll.append(20)
-        self.ll.append(30)
-        import io
-        from contextlib import redirect_stdout
-        f = io.StringIO()
-        with redirect_stdout(f):
-            self.ll.display()
-        output = f.getvalue().strip()
-        self.assertEqual(output, "10 -> 20 -> 30 -> None")
-
 if __name__ == "__main__":
     unittest.main()

@@ -1,17 +1,23 @@
+import re
+
 import bcrypt
 
-username = input("Enter your username: ")
-password = input("Enter your password: ")
+USER_DETAILS = 'user_details.txt'
 
 def hashed_password(password):
-    return bcrypt.hashpw(password, bcrypt.gensalt())
+    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+
+def save_to_file(username, hashed_password):
+    with open(USER_DETAILS, "a") as file:
+        file.write(f'{username},{hashed_password.decode("utf-8")}\n')
 
 def validate_user(username, password):
-    with open(USER_DETAILS, 'r') as f:
-
-def save_to_file(username, password):
-    with open("user_details.txt", "a") as file:
-        file.write(f'{username},{hashed_password(password.encode('utf-8'))}\n')
+    with open(USER_DETAILS, 'r') as file:
+        for line in file:
+            stored_username, stored_password = line.strip().split(',')
+            if username == stored_username:
+                return bcrypt.checkpw(password.encode('utf-8'), stored_password.encode('utf-8'))
+    return False
 
 def register_user():
     while True:
@@ -28,7 +34,17 @@ def register_user():
             continue
         break
 
-        save_to_file(username, password)
+    save_to_file(username, hashed_password(password))
+    main()
+
+def login_user():
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+    if validate_user(username, password):
+        print("Logged in successfully")
+    else:
+        print("Invalid login credentials")
+    main()
 
 def main():
     menu = """
@@ -38,7 +54,6 @@ def main():
     """
 
     choice = input(menu)
-
     match choice:
         case "1":
             register_user()
@@ -47,9 +62,13 @@ def main():
         case "3":
             print("Thank you for registering")
 
-
-
-# my_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-#
-# print("username:", username)
-# print("password:", my_password)
+main()
+# while True:
+#     password = input("Enter your password: ")
+#     if re.fullmatch(r'\w{8,}', password):
+#         print("Thank you for registering")
+#         break
+#     else:
+#         print("Invalid password")
+help(re.match)
+help(re.fullmatch)

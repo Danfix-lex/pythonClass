@@ -5,29 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae3c1137-b597-4861-b1e9-0937ce531955" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../DSA/arrays/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/arraystest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/linkedlists/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/linkedliststest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/queues/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/queuestest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/sets/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/setstest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/stacks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/stackstest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/tuples/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSA/tuplestest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApp/ClassWork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../enum/enums/GeoPlitical.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSA/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSA/DSA/Stack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSA/DSA/list_function.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSA/DSA/set_function.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSA/DSATest/TestStack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSA/DSATest/list_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSA/DSATest/set_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApp/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bankApp/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApp/bankfunction/BankFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankApp/bankfunction/BankFunction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/classMethod.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeWar/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/arrays/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA/arrays/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/arraystest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA/arraystest/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/linkedlists/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA/linkedlists/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/linkedliststest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA/linkedliststest/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA/stacks/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA/stacks/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankCurrent/accountFunction/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bankCurrent/accountFunction/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankCurrent/test/AccountTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bankCurrent/test/AccountTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankCurrent/test/BankTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bankCurrent/test/BankTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApp/ClassWork.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankApp/ClassWork.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +59,13 @@
     "Python tests.Python tests for tvTest.tvTest.test_power_on.executor": "Run",
     "Python tests.Python tests in TvTest.py.executor": "Run",
     "Python tests.Python tests in tvTest.py.executor": "Run",
+    "Python.ClassWork.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/danfix/pythonClass/classMethod",
+    "last_opened_file_path": "/home/danfix/pythonClass/codeWar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,7 +74,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for DiaryTest.TestDiary">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="classMethod" />
       <option name="ENV_FILES" value="" />
@@ -266,6 +258,9 @@
       <workItem from="1739771313934" duration="36000" />
       <workItem from="1739880005422" duration="336000" />
       <workItem from="1739921686291" duration="38000" />
+      <workItem from="1740045801652" duration="6885000" />
+      <workItem from="1740053570365" duration="9041000" />
+      <workItem from="1740125017889" duration="84000" />
     </task>
     <servers />
   </component>
@@ -274,5 +269,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/classMethod$.coverage" NAME=" Coverage Results" MODIFIED="1739880107922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryApp/diaryApp" />
+    <SUITE FILE_PATH="coverage/classMethod$ClassWork.coverage" NAME="ClassWork Coverage Results" MODIFIED="1740067002105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankApp" />
+    <SUITE FILE_PATH="coverage/classMethod$main.coverage" NAME="main Coverage Results" MODIFIED="1740066485125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

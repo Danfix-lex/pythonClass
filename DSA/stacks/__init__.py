@@ -4,7 +4,7 @@ class Stack:
         self.stack = [None] * capacity
         self.top = -1
 
-    def push(self, item):
+    def push(self, item):-
         if self.top < self.capacity - 1:
             self.top += 1
             self.stack[self.top] = item

@@ -45,11 +45,11 @@ class AccountTest(unittest.TestCase):
     def test_update_pin_success(self):
         self.assertTrue(self.account.update_pin(1234, 5678))
         with self.assertRaises(ValueError):
-            self.account.update_pin(1234, 9999)  # Old PIN is now incorrect
+            self.account.update_pin(1234, 9999)
 
     def test_update_pin_invalid(self):
         with self.assertRaises(ValueError):
-            self.account.update_pin(9999, 5678)  # Wrong old PIN
+            self.account.update_pin(9999, 5678)
 
 
 if __name__ == "__main__":
