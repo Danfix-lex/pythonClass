@@ -6,4 +6,4 @@ class Course:
         self.credits = credits
 
     def __repr__(self):
-        return f"Course(ID: {self.course_id}, Name: {self.name}, Instructor: {self.instructor})"
+        return f"ID: {self.course_id}\n, Name: {self.name}\n, Instructor: {self.instructor})"

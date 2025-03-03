@@ -18,4 +18,4 @@ class Student(User):
         return self.enrolled_courses
 
     def __repr__(self):
-        return f"Student(ID: {self.user_id}, Username: {self.username})"
+        return f"ID: {self.user_id}\n, Username: {self.username})"

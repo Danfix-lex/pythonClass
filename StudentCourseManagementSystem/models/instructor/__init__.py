@@ -1,6 +1,9 @@
 from models.course import Course
 from models.user import User
 
+class UsedIdException(Exception):
+    pass
+
 class Instructor(User):
     def __init__(self, user_id: int, username: str, password: str):
         super().__init__(user_id, username, password, role="instructor")
@@ -20,6 +23,7 @@ class Instructor(User):
             student.enrolled_courses[course_id] = grade
             return f"Graded {student.username} with {grade} in course {course_id}."
         return "Student not enrolled in this course."
+
 
     def __repr__(self):
         return f"Instructor(ID: {self.user_id}, Username: {self.username})"

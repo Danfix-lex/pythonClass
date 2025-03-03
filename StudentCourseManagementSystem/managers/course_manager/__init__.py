@@ -2,6 +2,10 @@ from models.student import Student
 from models.instructor import Instructor
 from models.course import Course
 from models.enrollment import Enrollment
+# from test_course_manager import UsedIdException
+
+
+
 
 class CourseManager:
     def __init__(self):
@@ -14,6 +18,8 @@ class CourseManager:
         self.students.append(student)
 
     def add_instructor(self, instructor: Instructor):
+        # if instructor.user_id in self.instructors:
+        #     raise UsedIdException("Instructor already exists.")
         self.instructors.append(instructor)
 
     def add_course(self, course: Course):
@@ -38,6 +44,19 @@ class CourseManager:
                 return course
         return None
 
+
+    # @property
+    # def courses(self):
+    #      courses_offered = ""
+    #      for course in self.courses:
+    #          courses_offered += course
+    #      return courses_offered
+
+    # @courses.setter
+    # def courses(self, courses):
+    #     self.courses = courses
+
+
     def get_students_in_course(self, course_id: int):
         students = []
         for enrollment in self.enrollments:
@@ -45,3 +64,15 @@ class CourseManager:
                 student = self.get_student(enrollment.student_id)
                 students.append(student)
         return students
+    @property
+    def get_size(self):
+        return len(self.students)
+
+    @property
+    def get_size_instructor(self):
+        return len(self.instructors)
+
+    @property
+    def get_size_course(self):
+        return len(self.courses)
+
