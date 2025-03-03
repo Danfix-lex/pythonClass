@@ -2,8 +2,6 @@ import unittest
 from unittest.mock import patch
 
 from sevenSegmentDisplayApp.app import SevenSegmentDisplay
-from sevenSegmentDisplayApp.display import SegmentRenderer
-from sevenSegmentDisplayApp.segment import SegmentMapper
 
 
 class TestSevenSegmentDisplay(unittest.TestCase):

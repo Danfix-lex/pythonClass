@@ -9,4 +9,4 @@ def squares(numbers):
     if number_square > 10000:
         print("its a large number square")
         else:
-            print("its a small number square")
+        print("its a small number square")
