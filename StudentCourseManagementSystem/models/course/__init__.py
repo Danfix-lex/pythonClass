@@ -5,5 +5,5 @@ class Course:
         self.instructor = instructor
         self.credits = credits
 
-    def __repr__(self):
-        return f"ID: {self.course_id}\n, Name: {self.name}\n, Instructor: {self.instructor})"
+    def __str__(self):
+        return f"(ID: {self.course_id}\n, Name: {self.name}\n, Instructor: {self.instructor})"

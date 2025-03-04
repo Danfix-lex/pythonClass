@@ -17,5 +17,5 @@ class Student(User):
     def view_grades(self):
         return self.enrolled_courses
 
-    def __repr__(self):
-        return f"ID: {self.user_id}\n, Username: {self.username})"
+    def __str__(self):
+        return f"(ID: {self.user_id}\n, Username: {self.username})"

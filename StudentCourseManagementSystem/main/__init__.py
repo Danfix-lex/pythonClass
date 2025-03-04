@@ -1,5 +1,5 @@
-from managers.course_manager import CourseManager
-from models.instructor import Instructor
+from managers.course_manager import CourseManager, RepeatedCourseCreationException
+from models.instructor import Instructor, CourseAlreadyCreatedException
 from models.student import Student
 
 
@@ -16,7 +16,12 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            user_id = int(input("Enter your user ID: "))
+            while True:
+                try:
+                    user_id = int(input("Enter your user ID: "))
+                    break
+                except ValueError:
+                    print("Invalid user ID!\nYou can only enter an integer!")
             username = input("Enter your username: ")
             password = input("Enter your password: ")
             student = Student(user_id, username, password)
@@ -24,7 +29,13 @@ def main():
             print(f"Student {username} registered successfully!")
 
         elif choice == "2":
-            user_id = int(input("Enter your user ID: "))
+            while True:
+                try:
+                    user_id = int(input("Enter your user ID: "))
+                    break
+                except ValueError:
+                    print("Invalid user ID!\nYou can only enter an integer!")
+
             username = input("Enter your username: ")
             password = input("Enter your password: ")
             instructor = Instructor(user_id, username, password)
@@ -109,8 +120,16 @@ def instructor_menu(instructor, course_manager):
             course_id = int(input("Enter the course ID: "))
             name = input("Enter the course name: ")
             credits = int(input("Enter the number of credits: "))
-            instructor.create_course(course_id, name, credits, course_manager)
-            print(f"Course {name} created successfully!")
+            try:
+                instructor.create_course(course_id, name, credits, course_manager)
+                print(f"Course {name} created successfully!")
+            except CourseAlreadyCreatedException:
+                print("You already created a course!")
+
+            except RepeatedCourseCreationException:
+                print("Course already exists!")
+
+
 
         elif choice == "2":
             course_id = int(input("Enter the course ID: "))

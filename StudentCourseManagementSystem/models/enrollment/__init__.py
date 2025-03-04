@@ -4,5 +4,5 @@ class Enrollment:
         self.student_id = student_id
         self.course_id = course_id
 
-    def __repr__(self):
+    def __str__(self):
         return f"Enrollment(ID: {self.enrollment_id}, Student: {self.student_id}, Course: {self.course_id})"

@@ -4,12 +4,20 @@ from models.user import User
 class UsedIdException(Exception):
     pass
 
+
+class CourseAlreadyCreatedException(Exception):
+    pass
+
+
 class Instructor(User):
-    def __init__(self, user_id: int, username: str, password: str):
+    def __init__(self, user_id:int, username: str, password: str):
         super().__init__(user_id, username, password, role="instructor")
         self.taught_courses = []  # List of course IDs
 
     def create_course(self, course_id: int, name: str, credits: int, course_manager):
+
+        if len(self.taught_courses) > 0:
+            raise CourseAlreadyCreatedException("Course already created")
         course = Course(course_id, name, self.username, credits)
         course_manager.add_course(course)
         self.taught_courses.append(course_id)
@@ -23,7 +31,9 @@ class Instructor(User):
             student.enrolled_courses[course_id] = grade
             return f"Graded {student.username} with {grade} in course {course_id}."
         return "Student not enrolled in this course."
+    def get_course_size(self):
+        return len(self.taught_courses)
 
 
-    def __repr__(self):
+    def __str__(self):
         return f"Instructor(ID: {self.user_id}, Username: {self.username})"

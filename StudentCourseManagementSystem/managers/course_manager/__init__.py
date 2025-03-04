@@ -5,6 +5,8 @@ from models.enrollment import Enrollment
 # from test_course_manager import UsedIdException
 
 
+class RepeatedCourseCreationException(Exception):
+    pass
 
 
 class CourseManager:
@@ -19,10 +21,13 @@ class CourseManager:
 
     def add_instructor(self, instructor: Instructor):
         # if instructor.user_id in self.instructors:
-        #     raise UsedIdException("Instructor already exists.")
+        #      raise UsedIdException("Instructor already exists.")
         self.instructors.append(instructor)
 
     def add_course(self, course: Course):
+        for course in self.courses:
+            if course in self.courses:
+                raise RepeatedCourseCreationException("Course already exists!")
         self.courses.append(course)
 
     def enroll_student(self, student_id: int, course_id: int):
@@ -44,7 +49,6 @@ class CourseManager:
                 return course
         return None
 
-
     # @property
     # def courses(self):
     #      courses_offered = ""
@@ -57,22 +61,25 @@ class CourseManager:
     #     self.courses = courses
 
 
-    def get_students_in_course(self, course_id: int):
-        students = []
-        for enrollment in self.enrollments:
-            if enrollment.course_id == course_id:
-                student = self.get_student(enrollment.student_id)
-                students.append(student)
-        return students
+    # def get_students_in_course(self, course_id: int):
+    #     students = []
+    #     for enrollment in self.enrollments:
+    #         if enrollment.course_id == course_id:
+    #             student = self.get_student(enrollment.student_id)
+    #             students.append(student)
+    #     return students
     @property
-    def get_size(self):
+    def get_size_of_students(self):
         return len(self.students)
 
     @property
-    def get_size_instructor(self):
+    def get_size_of_instructor(self):
         return len(self.instructors)
 
     @property
-    def get_size_course(self):
+    def get_size_of_course(self):
         return len(self.courses)
+
+    def display_all_course(self):
+        pass
 
