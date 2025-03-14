@@ -1,6 +1,8 @@
 from managers.course_manager import CourseManager, RepeatedCourseCreationException
 from models.instructor import Instructor, CourseAlreadyCreatedException
 from models.student import Student
+from models.course import Course
+from models.enrollment import Enrollment
 
 
 def main():
@@ -47,6 +49,7 @@ def main():
             password = input("Enter your password: ")
             student = next((s for s in course_manager.students if s.username == username), None)
             if student and student.verify_password(password):
+                print(student.verify_password(password))
                 print(f"Welcome, {student.username}!")
                 student_menu(student, course_manager)
             else:
@@ -121,15 +124,11 @@ def instructor_menu(instructor, course_manager):
             name = input("Enter the course name: ")
             credits = int(input("Enter the number of credits: "))
             try:
-                instructor.create_course(course_id, name, credits, course_manager)
+                course = Course(course_id, name, instructor.user_id, credits)
+                course_manager.add_course(course)
                 print(f"Course {name} created successfully!")
-            except CourseAlreadyCreatedException:
-                print("You already created a course!")
-
             except RepeatedCourseCreationException:
                 print("Course already exists!")
-
-
 
         elif choice == "2":
             course_id = int(input("Enter the course ID: "))
